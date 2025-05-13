@@ -1,0 +1,23 @@
+2025-05-12 22:54:02,066:INFO:Created directory: C:\Users\asus\OneDrive\Pictures\Documents
+2025-05-12 22:54:02,067:INFO:Created directory: C:\Users\asus\OneDrive\Pictures\Images
+2025-05-12 22:54:02,068:INFO:Created directory: C:\Users\asus\OneDrive\Pictures\Videos
+2025-05-12 22:54:02,069:INFO:Created directory: C:\Users\asus\OneDrive\Pictures\Others
+2025-05-12 22:54:02,071:INFO:Moved file 133876328312646449.jpg to Others/
+2025-05-12 22:54:02,072:ERROR:Error moving file 133876328312646449.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,074:INFO:Moved file 133883043783483796.jpg to Others/
+2025-05-12 22:54:02,074:ERROR:Error moving file 133883043783483796.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,075:INFO:Moved file 133893649709269149.jpg to Others/
+2025-05-12 22:54:02,076:ERROR:Error moving file 133893649709269149.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,077:INFO:Moved file 133897288876981548.jpg to Others/
+2025-05-12 22:54:02,077:ERROR:Error moving file 133897288876981548.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,078:INFO:Moved file 133905044875497262.jpg to Others/
+2025-05-12 22:54:02,078:ERROR:Error moving file 133905044875497262.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,080:INFO:Moved file 133912840742230240.jpg to Others/
+2025-05-12 22:54:02,080:ERROR:Error moving file 133912840742230240.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,082:INFO:Moved file desktop.ini to Others/
+2025-05-12 22:54:02,082:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,083:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,084:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,085:INFO:Moved file MS resume.jpg to Others/
+2025-05-12 22:54:02,086:ERROR:Error moving file MS resume.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-05-12 22:54:02,086:INFO:File organization completed successfully.
