@@ -1,6 +1,11 @@
 import os
 import shutil 
 import logging
+import streamlit as st
+
+st.title("File Organizer Pro")
+
+directory = st.text_input("Enter the desired directory path")
 
 #configure logging
 logging.basicConfig(
@@ -9,8 +14,6 @@ logging.basicConfig(
     format='%(asctime)s:%(levelname)s:%(message)s'
 )
 
-# Define the target directory '  and the categories
-TARGET_DIR = r'C:\Users\asus\OneDrive\Pictures'
 CATEGORIES = {
     'Documents': ['.pdf', '.doc', '.docx', '.txt', '.ppt', '.pptx', '.xls', '.xlsx'],
     'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff'],
@@ -19,13 +22,12 @@ CATEGORIES = {
 }
 
 #- Design folder structure by categories (Documents, Images, Videos,Others)
-#def create_category_folders():
 
-def create_category_folders():
+def create_category_folders(directory):
     """
     Create category folders in the target directory if they don't exist"""
     for category in CATEGORIES.keys():
-        category_path = os.path.join(TARGET_DIR, category)
+        category_path = os.path.join(directory, category)
         # - Add exception handling (try-except) and logging for errors and activity.
         try:
             if not os.path.exists(category_path):
@@ -37,21 +39,18 @@ def create_category_folders():
             logging.error(f"Error creating directory {category_path}: {e}")
             # print(f"Error creating directory {category_path}: {e}")  
 
-
-
-
 # - Implement script to scan and classify files based on extensions.
-def move_and_classify_files():
+def move_and_classify_files(directory):
     try:
-        files = [f for f in os.listdir(TARGET_DIR) if os.path.isfile(os.path.join(TARGET_DIR, f))]
+        files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
         for filename in files:
-           file_path = os.path.join(TARGET_DIR, filename)
+           file_path = os.path.join(directory, filename)
            _,file_extension = os.path.splitext(filename)
 
            moved = False
            for category, extensions in CATEGORIES.items():
                if file_extension.lower() in extensions:
-                   destination = os.path.join(TARGET_DIR, category, filename)
+                   destination = os.path.join(directory, category, filename)
                    try:
                        shutil.move(file_path, destination)
                        logging.info(f"Moved file {filename} to {category}")
@@ -60,7 +59,7 @@ def move_and_classify_files():
                        logging.error(f"Error moving file {filename} to {category}: {e}")
                    break  
                if not moved:
-                   others_path = os.path.join(TARGET_DIR, 'Others', filename)
+                   others_path = os.path.join(directory, 'Others', filename)
                    try:
                        shutil.move(file_path, others_path)
                        logging.info(f"Moved file {filename} to Others/")
@@ -69,17 +68,17 @@ def move_and_classify_files():
     except Exception as e:
         logging.error(f"Error moving and classifying files: {e}")
 
+# - Add a button to trigger the file organization process.
+if st.button( "submit"):
+    if directory:
+        try:
+            create_category_folders(directory)
+            move_and_classify_files(directory)
+            logging.info("File organization completed successfully.")
+        except Exception as e:
+            logging.error(f"Error in main function: {e}")
+    else:
+        st.warning("Please enter a directory path before submitting.")
 
-
-def main():
-    try:
-        create_category_folders()
-        move_and_classify_files()
-        logging.info("File organization completed successfully.")
-    except Exception as e:
-        logging.error(f"Error in main function: {e}")
-
-if __name__ == "__main__":
-    main()                  
                   
-                   
+#  streamlit run file_organizer.py                   

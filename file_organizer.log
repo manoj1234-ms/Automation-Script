@@ -21,3 +21,92 @@
 2025-05-12 22:54:02,085:INFO:Moved file MS resume.jpg to Others/
 2025-05-12 22:54:02,086:ERROR:Error moving file MS resume.jpg to Images: [WinError 2] The system cannot find the file specified
 2025-05-12 22:54:02,086:INFO:File organization completed successfully.
+2025-06-11 12:49:41,274:INFO:Created directory: Documents
+2025-06-11 12:49:41,279:INFO:Created directory: Images
+2025-06-11 12:49:41,282:INFO:Created directory: Videos
+2025-06-11 12:49:41,284:INFO:Created directory: Others
+2025-06-11 12:49:41,285:ERROR:Error moving and classifying files: [WinError 3] The system cannot find the path specified: ''
+2025-06-11 12:49:41,285:INFO:File organization completed successfully.
+2025-06-11 12:50:26,241:INFO:Created directory: C:\Users\asus\OneDrive\Documents\Documents
+2025-06-11 12:50:26,243:INFO:Created directory: C:\Users\asus\OneDrive\Documents\Images
+2025-06-11 12:50:26,244:INFO:Created directory: C:\Users\asus\OneDrive\Documents\Videos
+2025-06-11 12:50:26,247:INFO:Created directory: C:\Users\asus\OneDrive\Documents\Others
+2025-06-11 12:50:26,262:INFO:Moved file .~lock.Online%20Retail%20Data%20Set%20(3).xlsx_0.ods# to Others/
+2025-06-11 12:50:26,264:ERROR:Error moving file .~lock.Online%20Retail%20Data%20Set%20(3).xlsx_0.ods# to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,265:ERROR:Error moving file .~lock.Online%20Retail%20Data%20Set%20(3).xlsx_0.ods# to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,267:ERROR:Error moving file .~lock.Online%20Retail%20Data%20Set%20(3).xlsx_0.ods# to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,274:INFO:Moved file 12th marksheet.jpg to Others/
+2025-06-11 12:50:26,275:ERROR:Error moving file 12th marksheet.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,280:INFO:Moved file Aadharcard.jpg to Others/
+2025-06-11 12:50:26,282:ERROR:Error moving file Aadharcard.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,287:INFO:Moved file activator.bat to Others/
+2025-06-11 12:50:26,288:ERROR:Error moving file activator.bat to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,290:ERROR:Error moving file activator.bat to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,291:ERROR:Error moving file activator.bat to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,292:INFO:Moved file Book1.xlsx to Documents
+2025-06-11 12:50:26,296:INFO:Moved file Data Science from Scratch.pdf to Documents
+2025-06-11 12:50:26,297:INFO:Moved file desktop.ini to Others/
+2025-06-11 12:50:26,298:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,299:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,300:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,304:INFO:Moved file MANOJ SHARMA data .resume.docx to Documents
+2025-06-11 12:50:26,307:INFO:Moved file MANOJ SHARMA web (1).docx to Documents
+2025-06-11 12:50:26,310:INFO:Moved file MANOJ SHARMA web.docx to Documents
+2025-06-11 12:50:26,313:INFO:Moved file manoj's Notebook.url to Others/
+2025-06-11 12:50:26,314:ERROR:Error moving file manoj's Notebook.url to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,315:ERROR:Error moving file manoj's Notebook.url to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,317:ERROR:Error moving file manoj's Notebook.url to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,320:INFO:Moved file manoj.jpg to Others/
+2025-06-11 12:50:26,321:ERROR:Error moving file manoj.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-06-11 12:50:26,325:INFO:Moved file nginx.conf.txt to Documents
+2025-06-11 12:50:26,328:INFO:Moved file python OOPs Concepts Handwritten notes.pdf to Documents
+2025-06-11 12:50:26,332:INFO:Moved file Python_Complete_Notes.pdf to Documents
+2025-06-11 12:50:26,335:INFO:Moved file SQL Complete Handwritten Notes.pdf to Documents
+2025-06-11 12:50:26,335:INFO:File organization completed successfully.
+2025-06-11 12:51:08,033:INFO:Directory already exists: Documents
+2025-06-11 12:51:08,034:INFO:Directory already exists: Images
+2025-06-11 12:51:08,034:INFO:Directory already exists: Videos
+2025-06-11 12:51:08,036:INFO:Directory already exists: Others
+2025-06-11 12:51:08,036:ERROR:Error moving and classifying files: [WinError 3] The system cannot find the path specified: ''
+2025-06-11 12:51:08,036:INFO:File organization completed successfully.
+2025-06-11 12:51:11,796:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Documents
+2025-06-11 12:51:11,797:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Images
+2025-06-11 12:51:11,797:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Videos
+2025-06-11 12:51:11,798:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Others
+2025-06-11 12:51:11,802:INFO:File organization completed successfully.
+2025-06-11 12:51:12,031:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Documents
+2025-06-11 12:51:12,032:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Images
+2025-06-11 12:51:12,032:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Videos
+2025-06-11 12:51:12,033:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Others
+2025-06-11 12:51:12,036:INFO:File organization completed successfully.
+2025-06-11 12:51:13,287:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Documents
+2025-06-11 12:51:13,288:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Images
+2025-06-11 12:51:13,288:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Videos
+2025-06-11 12:51:13,288:INFO:Directory already exists: C:\Users\asus\OneDrive\Documents\Others
+2025-06-11 12:51:13,293:INFO:File organization completed successfully.
+2025-06-11 13:05:24,901:INFO:Created directory: C:\Users\asus\OneDrive\Pictures\Screenshots\Documents
+2025-06-11 13:05:24,902:INFO:Created directory: C:\Users\asus\OneDrive\Pictures\Screenshots\Images
+2025-06-11 13:05:24,903:INFO:Created directory: C:\Users\asus\OneDrive\Pictures\Screenshots\Videos
+2025-06-11 13:05:24,903:INFO:Created directory: C:\Users\asus\OneDrive\Pictures\Screenshots\Others
+2025-06-11 13:05:24,906:INFO:Moved file 01 Descriptive Statistics for Exploring Data.pdf to Documents
+2025-06-11 13:05:24,907:INFO:Moved file 02 Producing Data, Sampling.pdf to Documents
+2025-06-11 13:05:24,909:INFO:Moved file 03 Probability.pdf to Documents
+2025-06-11 13:05:24,910:INFO:Moved file 04 Normal Approximation for Data and Binomial Distribution.pdf to Documents
+2025-06-11 13:05:24,911:INFO:Moved file 05 Sampling Distributions and Central Limit Theorem.pdf to Documents
+2025-06-11 13:05:24,912:INFO:Moved file 06 Regression.pdf to Documents
+2025-06-11 13:05:24,913:INFO:Moved file 07 Confidence Intervals.pdf to Documents
+2025-06-11 13:05:24,914:INFO:Moved file 08 Test of Significance.pdf to Documents
+2025-06-11 13:05:24,916:INFO:Moved file 09 Resampling.pdf to Documents
+2025-06-11 13:05:24,917:INFO:Moved file 10 Analysis of Categorical Data.pdf to Documents
+2025-06-11 13:05:24,918:INFO:Moved file 11 One-way Analysis of Variance.pdf to Documents
+2025-06-11 13:05:24,919:INFO:Moved file 12 Multiple Comparisons.pdf to Documents
+2025-06-11 13:05:24,919:INFO:Moved file desktop.ini to Others/
+2025-06-11 13:05:24,920:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 13:05:24,920:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 13:05:24,920:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-06-11 13:05:24,922:INFO:Moved file python certificate.pdf to Documents
+2025-06-11 13:05:24,924:INFO:Moved file Screenshot 2025-05-13 171000.png to Others/
+2025-06-11 13:05:24,925:ERROR:Error moving file Screenshot 2025-05-13 171000.png to Images: [WinError 2] The system cannot find the file specified
+2025-06-11 13:05:24,926:INFO:Moved file Screenshot 2025-05-26 100823.png to Others/
+2025-06-11 13:05:24,926:ERROR:Error moving file Screenshot 2025-05-26 100823.png to Images: [WinError 2] The system cannot find the file specified
+2025-06-11 13:05:24,926:INFO:File organization completed successfully.
