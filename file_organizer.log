@@ -110,3 +110,21 @@
 2025-06-11 13:05:24,926:INFO:Moved file Screenshot 2025-05-26 100823.png to Others/
 2025-06-11 13:05:24,926:ERROR:Error moving file Screenshot 2025-05-26 100823.png to Images: [WinError 2] The system cannot find the file specified
 2025-06-11 13:05:24,926:INFO:File organization completed successfully.
+2025-07-05 12:16:38,716:INFO:Directory already exists: C:\Users\asus\OneDrive\Pictures\Documents
+2025-07-05 12:16:38,717:INFO:Directory already exists: C:\Users\asus\OneDrive\Pictures\Images
+2025-07-05 12:16:38,717:INFO:Directory already exists: C:\Users\asus\OneDrive\Pictures\Videos
+2025-07-05 12:16:38,717:INFO:Directory already exists: C:\Users\asus\OneDrive\Pictures\Others
+2025-07-05 12:16:38,720:INFO:Moved file 133923078348090156.jpg to Others/
+2025-07-05 12:16:38,722:ERROR:Error moving file 133923078348090156.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-07-05 12:16:38,723:INFO:Moved file 133936018725474008.jpg to Others/
+2025-07-05 12:16:38,724:ERROR:Error moving file 133936018725474008.jpg to Images: [WinError 2] The system cannot find the file specified
+2025-07-05 12:16:38,726:INFO:Moved file desktop.ini to Others/
+2025-07-05 12:16:38,727:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-07-05 12:16:38,728:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-07-05 12:16:38,728:ERROR:Error moving file desktop.ini to Others/: [WinError 2] The system cannot find the file specified
+2025-07-05 12:16:38,729:INFO:File organization completed successfully.
+2025-07-05 12:16:41,713:INFO:Directory already exists: C:\Users\asus\OneDrive\Pictures\Documents
+2025-07-05 12:16:41,714:INFO:Directory already exists: C:\Users\asus\OneDrive\Pictures\Images
+2025-07-05 12:16:41,714:INFO:Directory already exists: C:\Users\asus\OneDrive\Pictures\Videos
+2025-07-05 12:16:41,715:INFO:Directory already exists: C:\Users\asus\OneDrive\Pictures\Others
+2025-07-05 12:16:41,715:INFO:File organization completed successfully.

@@ -47,37 +47,44 @@ def get_unique_filename(dest_dir, file_name):
 
 def organize_files(source_dir, selected_extensions):
     log_entries = []
-    try:
-        files = os.listdir(source_dir)
-    except FileNotFoundError:
-        st.error("❌ Source directory not found.")
-        return pd.DataFrame()
-    except Exception as e:
-        st.error(f"❌ Unable to read folder: {e}")
-        return pd.DataFrame()
 
-    for file in files:
-        try:
-            full_path = os.path.join(source_dir, file)
-            if os.path.isfile(full_path):
-                _, ext = os.path.splitext(file.lower())
-                if selected_extensions and ext not in selected_extensions:
+    try:
+        for root, dirs, files in os.walk(source_dir):
+            for file in files:
+                try:
+                    full_path = os.path.join(root, file)
+                    if os.path.isfile(full_path):
+                        _, ext = os.path.splitext(file.lower())
+                        if selected_extensions and ext not in selected_extensions:
+                            continue
+
+                        category = get_category(file)
+                        dest_dir = os.path.join(source_dir, category)
+
+                        # Skip moving files already in destination category folders
+                        if os.path.commonpath([dest_dir]) == os.path.commonpath([root]):
+                            continue
+
+                        ensure_dir(dest_dir)
+                        new_name = get_unique_filename(dest_dir, file)
+                        shutil.move(full_path, os.path.join(dest_dir, new_name))
+
+                        log_entries.append({
+                            "Original Name": file,
+                            "Moved To": f"{category}/{new_name}",
+                            "Time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        })
+
+                except Exception as e:
+                    st.warning(f"⚠️ Failed to move `{file}`: {e}")
                     continue
-                category = get_category(file)
-                dest_dir = os.path.join(source_dir, category)
-                ensure_dir(dest_dir)
-                new_name = get_unique_filename(dest_dir, file)
-                shutil.move(full_path, os.path.join(dest_dir, new_name))
-                log_entries.append({
-                    "Original Name": file,
-                    "Moved To": f"{category}/{new_name}",
-                    "Time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                })
-        except Exception as e:
-            st.warning(f"⚠️ Failed to move `{file}`: {e}")
-            continue
+
+    except Exception as e:
+        st.error(f"❌ An unexpected error occurred during walk: {e}")
+        return pd.DataFrame()
 
     return pd.DataFrame(log_entries)
+
 
 # ================= Streamlit UI =================
 
@@ -92,7 +99,7 @@ source_dir = st.text_input("📂 Enter full path of folder to organize:").strip(
 # File type filters
 st.subheader("🎯 File Type Filters")
 all_extensions = sorted({ext for exts in file_mappings.values() for ext in exts})
-selected_exts = st.multiselect("Select file types to move", all_extensions, default=all_extensions)
+selected_exts = st.multiselect("Select file types to move", all_extensions, default= all_extensions)
 
 # Run button
 if source_dir:
@@ -104,6 +111,15 @@ if source_dir:
                     st.success("✅ Files organized successfully!")
                     st.markdown(f"### 📝 Log for {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
                     st.dataframe(log_df, use_container_width=True)
+
+                    #Download log as CSV
+                    csv_data =log_df.to_csv(index=False).encode('utf-8')
+                    st.download_button(
+                        label="📥 Download Log as CSV",
+                        data=csv_data,
+                        file_name=f"file_organizer_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                        mime='text/csv'
+                    )
                 else:
                     st.info("📦 No matching files found to move.")
             except Exception as e:

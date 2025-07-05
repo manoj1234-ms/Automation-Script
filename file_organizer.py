@@ -3,8 +3,8 @@ import shutil
 import logging
 import streamlit as st
 
-st.title("File Organizer Pro")
-
+st.set_page_config(page_title="📁 File Organizer Pro", layout="centered")
+st.title("📁 File Organizer Pro")
 directory = st.text_input("Enter the desired directory path")
 
 #configure logging
